@@ -1,0 +1,26 @@
+diff --git a/arch/riscv/boot/dts/spacemit/k1-x_opp_table.dtsi b/arch/riscv/boot/dts/spacemit/k1-x_opp_table.dtsi
+index 4d432544c82d..c5c917a10460 100644
+--- a/arch/riscv/boot/dts/spacemit/k1-x_opp_table.dtsi
++++ b/arch/riscv/boot/dts/spacemit/k1-x_opp_table.dtsi
+@@ -17,7 +17,7 @@ opp1800000000 {
+ 			ace-hz = /bits/ 64 <900000000>;
+ 			opp-microvolt = <1160000>;
+ 			clock-latency-ns = <200000>;
+-			turbo-mode;
++			//turbo-mode;
+ 		};
+ 
+ 		opp1600000000 {
+diff --git a/drivers/cpufreq/spacemit-cpufreq.c b/drivers/cpufreq/spacemit-cpufreq.c
+index 745844e9d2b2..38a7bc406589 100644
+--- a/drivers/cpufreq/spacemit-cpufreq.c
++++ b/drivers/cpufreq/spacemit-cpufreq.c
+@@ -49,7 +49,7 @@ of_hotplug_cooling_register(struct cpufreq_policy *policy);
+ #define FILTER_POINTS_0			(135)
+ #define FILTER_POINTS_1			(142)
+ 
+-#define K1_MAX_FREQ_LIMITATION		(1600000)
++#define K1_MAX_FREQ_LIMITATION		(1800000)
+ #define M1_MAX_FREQ_LIMITATION		(1800000)
+ 
+ #endif

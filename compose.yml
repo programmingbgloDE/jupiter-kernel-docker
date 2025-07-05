@@ -1,0 +1,6 @@
+services:
+  cross-compile:
+    image: cross-compile:latest
+    build: .
+    volumes:
+      - ./jupiter-kernel:/k1_kernel
