@@ -9,7 +9,7 @@ You need to have Docker and Docker Compose installed on your System. This is cur
 
 ### Download Source
 First, you need to download the source code. You can find a link to it on the official Milk V [Website](https://milkv.io/docs/jupiter/development-guide/kernel-compilation). 
-To download it change into the `jupiter-kernel` directory and download it with `git clone <repo_url>` this might take a while depending on your interne speed.
+To download it change into the `jupiter-kernel` directory and download it with `git clone <repo_url>` this might take a while depending on your internet speed.
 
 After that change back to the root directory of this project and build the Docker image, with `docker compose build cross-compile`. 
 When this is done, everything should be ready for you to run `docker compose run cross-compile bash`.
